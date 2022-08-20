@@ -1,0 +1,8 @@
+{
+  "id": "hyleo-proxy",
+  "name": "Hyleo Proxy",
+  "version": "${version}",
+  "authors": [],
+  "dependencies": [],
+  "main": "io.hyleo.proxy.Hyleo"
+}
