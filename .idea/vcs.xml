@@ -3,7 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/display-api" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/lobby" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/oneblock" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/proxy" vcs="Git" />
   </component>
