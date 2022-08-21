@@ -37,6 +37,6 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Build with Gradle
-      uses: hyleo-studios/minecraft@v1-Mono-Repo-CI-Pipeline
+      uses: HyleoStudios/minecraft@v1-Mono-Repo-CI-Pipeline
       with:
         arguments: build
