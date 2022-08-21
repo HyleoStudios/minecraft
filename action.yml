@@ -1,4 +1,4 @@
-name: 'CI-Pipeline'
+name: 'Mono-Repo-CI-Pipeline'
 description: 'A GitHub action built using Kotlin/JS that builds projects in a monorepo.'
 author: 'Hyleo'
 branding:
