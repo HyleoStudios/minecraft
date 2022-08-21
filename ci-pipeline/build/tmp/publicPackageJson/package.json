@@ -1,0 +1,12 @@
+{
+  "name": "ci-pipeline",
+  "version": "1.0.0-SNAPSHOT",
+  "main": "ci-pipeline.js",
+  "devDependencies": {
+    "source-map-support": "0.5.21"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

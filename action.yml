@@ -1,0 +1,9 @@
+name: 'CI-Pipeline'
+description: 'A GitHub action built using Kotlin/JS that builds projects in a monorepo.'
+author: 'Hyleo'
+branding:
+  icon: 'award'
+  color: 'green'
+runs:
+  using: 'node16'
+  main: 'build/js/packages/ci-pipeline/kotlin/ci-pipeline.js'
