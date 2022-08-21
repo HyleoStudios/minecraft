@@ -9,18 +9,10 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ "release", "development" ]
+    branches: [ "release" ]
     paths:
       - "display-api/**"
-      - "proxy/**"
-      - "spring-services/api-gateway/**"
-      - "spring-services/sandbox/**"
-      - "paper-plugins/paper-sandbox/**"
-      - "paper-plugins/lobby/**"
-      - "paper-plugins/oneblock/**"
-  pull_request:
-    branches: [ "release", "development" ]
-    
+
 permissions:
   contents: read
 
@@ -37,6 +29,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Build with Gradle
-      uses: HyleoStudios/minecraft@v1-Mono-Repo-CI-Pipeline
+      uses: gradle/gradle-build-action@v2
       with:
         arguments: build
+        build-root-directory: display-api/
