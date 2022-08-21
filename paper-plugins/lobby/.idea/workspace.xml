@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b2f6e9-c8c9-4d72-9e0c-1b5632554347" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../action.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/7.4.2/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/7.4.2/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/7.4.2/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/7.4.2/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/7.4.2/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/7.4.2/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ci-pipeline/src/test/kotlin/GreetingTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="63b2f6e9-c8c9-4d72-9e0c-1b5632554347" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +55,7 @@
       <workItem from="1660965332418" duration="2000" />
       <workItem from="1660970593015" duration="1292000" />
       <workItem from="1661048910422" duration="1896000" />
+      <workItem from="1661054808615" duration="134000" />
     </task>
     <servers />
   </component>
