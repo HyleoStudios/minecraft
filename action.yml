@@ -6,4 +6,4 @@ branding:
   color: 'green'
 runs:
   using: 'node16'
-  main: 'build/js/packages/ci-pipeline/kotlin/ci-pipeline.js'
+  main: 'ci-pipeline/build/js/packages/ci-pipeline/kotlin/ci-pipeline.js'
