@@ -1,8 +1,5 @@
 name: Display API (Gradle)
 
-env:
-  PATH: display-api
-
 on:
   push:
     branches: [ "release" ]
@@ -26,4 +23,4 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: build
-          build-root-directory: "$PATH/"
+          build-root-directory: "display-api/"
