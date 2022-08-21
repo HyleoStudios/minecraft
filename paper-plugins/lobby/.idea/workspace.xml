@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b2f6e9-c8c9-4d72-9e0c-1b5632554347" name="Changes" comment="" />
+    <list default="true" id="63b2f6e9-c8c9-4d72-9e0c-1b5632554347" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/src/main/kotlin/io/hyleo/apigateway/ApiGatewayApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-services/api-gateway/src/test/kotlin/io/hyleo/apigateway/ApiGatewayApplicationTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +45,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/hypenage/Documents/GitHub/minecraft/paper-plugins/lobby"
+    "last_opened_file_path": "/Users/hypenage/Documents/GitHub/minecraft/paper-plugins/lobby",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -41,9 +61,12 @@
       <option name="presentableId" value="Default" />
       <updated>1660965331305</updated>
       <workItem from="1660965332418" duration="2000" />
-      <workItem from="1660970593015" duration="1000" />
+      <workItem from="1660970593015" duration="1292000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
