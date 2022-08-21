@@ -1,7 +1,7 @@
 name: Display API (Gradle)
 
 env:
-  PATH: display-api
+  PATH: "display-api"
 
 on:
   push:
