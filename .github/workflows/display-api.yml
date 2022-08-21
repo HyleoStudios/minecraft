@@ -6,7 +6,7 @@ env:
 on:
   push:
     branches: [ "release" ]
-    paths: [ $Path/** ]
+    paths: [ "$Path/**" ]
 
 permissions:
   contents: read
@@ -26,4 +26,4 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: build
-          build-root-directory: $PATH/
+          build-root-directory: "$PATH/"
