@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  proxy:
+    build:
+      context: .
+    volumes:
+      - .srv:/srv
+    ports:
+      - 25565:25577
+    container_name: proxy
+volumes:
+  srv:

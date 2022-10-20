@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: proxy
+  namespace: proxy-space
+  labels:
+    app: proxy
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: proxy
+      labels:
+        app: proxy
+    spec:
+      containers:
+        - name: proxy
+          image: hypenage/trailbend:proxy
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 25577
+              name: velocity
+              protocol: TCP
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: proxy

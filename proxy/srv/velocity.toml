@@ -1,0 +1,101 @@
+# Config version. Do not change this
+config-version = "2.5"
+
+# (!)(!)(!) Leave this as "0.0.0.0:25577" (!)(!)(!)
+bind = "0.0.0.0:25577"
+
+# This will not be displayed (but do not write anything bad!!)
+motd = ""
+
+# This will not be displayed (but do not write anything bad!!)
+show-max-players = 1
+
+# (!)(!)(!) WE ALWAYS AUTHENTICATE PLAYERS NEVER TOUCH!! (!)(!)(!)
+online-mode = true
+
+# Fuck you Mojang we dont need Minecraft 1.19.84
+force-key-authentication = false
+
+# Still Experiementing with this. Might help detect stolen accounts
+prevent-client-proxy-connections = true
+
+# (!)(!)(!) DONT EVER TOUCH THIS LEAVE IT AS "MODERN" (!)(!)(!)
+player-info-forwarding-mode = "legacy"
+
+# (!)(!)(!) DONT EVER TOUCH THIS LEAVE IT AS "forwarding.secret" (!)(!)(!)
+forwarding-secret-file = "forwarding.secret"
+
+# Announces whether or not we support Forge (leave as "true")
+announce-forge = true
+
+# Will kick the player if the log in twice (leave as "true")
+kick-existing-players = true
+
+# Dont touch this, you'll mess up our MOTD (leave as "disabled")
+ping-passthrough = "DISABLED"
+
+# (!) Privacy Concern: This will fill the disk up and is not being securly stored. (leave as "false")
+enable-player-address-logging = false
+
+# (!) Do not define any servers. Thats what this proxy does! (leave empty) (!)
+[servers]
+
+# (!) Do not define any servers. The proxy will handle this! (leave empty) (!)
+try = []
+
+# (!)(!)(!) The proxy will handle this! (leave empty) (!)(!)(!)
+[forced-hosts]
+
+[advanced]
+
+# We are compressing all packets of any size. Leave this at 0 we send a lot of packets
+compression-threshold = 0
+
+# A range of 0 - 9. We are doing the most compression of "9" atm (we send a lot of packets)
+compression-level = 9
+
+# Will throttle the number of people connection from one ip (leave as "0")
+login-ratelimit = 0
+
+# Default is 5000, we have no reason to change this yet
+connection-timeout = 5000
+
+# Default is 30000, we have no reason to change this yet
+read-timeout = 30000
+
+# IDK what this is, we dont need it (leave as "false")
+haproxy-protocol = false
+
+# Enables TCP fast open support on the proxy. Requires the proxy to run on Linux.
+tcp-fast-open = true
+
+# (!) We dont plan on using this but leave as "true" (!)
+bungee-plugin-message-channel = true
+
+# This is just console spam for the proxy. (leave as "false")
+show-ping-requests = false
+
+# (!) Prevents players from being disconnected because of errors (leave as "true") (!)
+failover-on-unexpected-server-disconnect = true
+
+# (!) Lets players see our proxy commands when they hit tab (leave as "true") (!)
+announce-proxy-commands = true
+
+# (!) This will just fill the disk up (leave as "false") (!)
+log-command-executions = false
+
+# (!) This will just fill the disk up (leave as "false") (!)
+log-player-connections = false
+
+[query]
+# We are not using this yet and may never (leave as "false")
+enabled = false
+
+# Query shouldnt be on but if it is, we will respond to it on port "25577"
+port = 25577
+
+# Query shouldnt be on but if it is somehow, "Hyleo" should be the response
+map = "Hyleo"
+
+# (!) Privacy concerns. Do not enable this. (leave as "false")
+show-plugins = false

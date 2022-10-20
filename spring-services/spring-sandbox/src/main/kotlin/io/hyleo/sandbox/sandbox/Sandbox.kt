@@ -1,6 +1,7 @@
 package io.hyleo.sandbox.sandbox
 
 import io.hyleo.sandbox.SandboxApplication
+import io.hyleo.sandbox.SandboxConfiguration
 import io.hyleo.sandbox.membership.Membership
 import lombok.ToString
 import org.springframework.data.annotation.Id
@@ -12,7 +13,7 @@ import java.util.*
 data class Sandbox(
     @Id
     val id: UUID,
-    val owner: UUID = SandboxApplication.NETWORK_OWNER,
+    val owner: UUID = SandboxConfiguration.NETWORK_OWNER,
     val mode: String,
     val name: String
 ) {

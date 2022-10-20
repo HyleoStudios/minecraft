@@ -1,8 +1,8 @@
 {
-  "id": "hyleo-proxy",
-  "name": "Hyleo Proxy",
+  "id": "proxy-plugin",
+  "name": "Proxy Plugin",
   "version": "${version}",
   "authors": [],
   "dependencies": [],
-  "main": "io.hyleo.proxy.Hyleo"
+  "main": "proxy.VelocityPlugin"
 }

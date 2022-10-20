@@ -1,0 +1,6 @@
+name: Sandbox
+version: '${version}'
+main: sandbox.Sandbox
+api-version: 1.19
+prefix: Sandbox
+softdepend: [LoadLast(No-Really-This-Works)]

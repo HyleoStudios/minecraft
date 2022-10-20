@@ -1,4 +1,4 @@
-package io.hyleo.proxy.commands
+package proxy.commands
 
 import com.mojang.brigadier.Command
 import com.mojang.brigadier.arguments.StringArgumentType
@@ -12,28 +12,23 @@ import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.format.NamedTextColor
 
 
-class PlayCommand private constructor() {
+object PlayCommand {
 
-    companion object {
-        private const val NAME = "play"
-        private val INSTANCE = PlayCommand()
+    private const val NAME = "play"
 
-        val BRIGADIER = BrigadierCommand(
-            LiteralArgumentBuilder
-                .literal<CommandSource>(NAME)
-                .requires(INSTANCE::requirement)
-                .executes(INSTANCE::playRandomModeRandomMap)
-                .then(
-                    INSTANCE.modeArgument().executes(INSTANCE::playRandomMap)
-                        .then(INSTANCE.mapArgument().executes(INSTANCE::playExact))
-                )
-                .build()
-        )
-    }
+    val BRIGADIER = BrigadierCommand(
+        LiteralArgumentBuilder
+            .literal<CommandSource>(NAME)
+            .requires(this::requirement)
+            .executes(this::playRandomModeRandomMap)
+            .then(
+                modeArgument().executes(this::playRandomMap)
+                    .then(mapArgument().executes(this::playExact))
+            )
+            .build()
+    )
 
-    private fun requirement(source: CommandSource): Boolean {
-        return source is Player
-    }
+    private fun requirement(source: CommandSource) = source is Player
 
     private fun playRandomModeRandomMap(context: CommandContext<CommandSource>): Int {
         val source = context.source
@@ -43,9 +38,8 @@ class PlayCommand private constructor() {
         return Command.SINGLE_SUCCESS
     }
 
-    private fun modeArgument(): RequiredArgumentBuilder<CommandSource, String> {
-        return RequiredArgumentBuilder.argument("mode", StringArgumentType.string())
-    }
+    private fun modeArgument() =
+        RequiredArgumentBuilder.argument<CommandSource, String>("mode", StringArgumentType.string())
 
     private fun playRandomMap(context: CommandContext<CommandSource>): Int {
         val argumentProvided = context.getArgument("mode", String::class.java)
@@ -59,9 +53,8 @@ class PlayCommand private constructor() {
         return Command.SINGLE_SUCCESS
     }
 
-    private fun mapArgument(): RequiredArgumentBuilder<CommandSource, String> {
-        return RequiredArgumentBuilder.argument("map", StringArgumentType.string())
-    }
+    private fun mapArgument() =
+        RequiredArgumentBuilder.argument<CommandSource, String>("map", StringArgumentType.string())
 
     private fun playExact(context: CommandContext<CommandSource>): Int {
 
@@ -71,8 +64,23 @@ class PlayCommand private constructor() {
 
         source.sendMessage {
             Component.text(
-                "Playing $mode on $map...",
+                "Playing ",
                 NamedTextColor.GREEN
+            ).append(
+                Component.text(
+                    mode,
+                    NamedTextColor.AQUA
+                )
+            ).append(
+                Component.text(
+                    " on ",
+                    NamedTextColor.GREEN
+                )
+            ).append(
+                Component.text(
+                    map,
+                    NamedTextColor.YELLOW
+                )
             )
         }
 

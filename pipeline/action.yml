@@ -1,0 +1,5 @@
+name: 'Monolith-CI-Pipeline'
+description: 'A pipeline for monolithic repositories using Gradle'
+runs:
+  using: 'node16'
+  main: 'index.js'

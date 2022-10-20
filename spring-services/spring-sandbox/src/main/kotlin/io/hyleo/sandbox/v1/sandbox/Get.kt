@@ -18,10 +18,7 @@ class Get {
 
     @GetMapping
     @ResponseBody
-    fun byId(@RequestParam(name = "id") id: UUID): Sandbox? {
-        val sandbox = service.getById(id)
-        return sandbox.orElse(null)
-    }
+    fun byId(@RequestParam(name = "user") id: UUID): Sandbox? = service.getById(id).orElse(null)
 
     @GetMapping
     @ResponseBody

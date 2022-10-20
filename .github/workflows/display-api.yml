@@ -1,5 +1,4 @@
 name: Display API (Gradle)
-
 on:
   push:
     branches: [ "master" ]
@@ -9,7 +8,7 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  Display-API:
     runs-on: ubuntu-latest
 
     steps:

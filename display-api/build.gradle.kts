@@ -14,6 +14,11 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.1.0")
+    implementation(kotlin("stdlib-jdk8"))
+    testImplementation("org.testng:testng:7.1.0")
+    implementation("net.kyori:adventure-api:4.10.0")
+    implementation(kotlin("script-runtime"))
 }
 
 tasks.test {
@@ -26,4 +31,12 @@ tasks.withType<KotlinCompile> {
 
 application {
     mainClass.set("MainKt")
+}
+val compileKotlin: KotlinCompile by tasks
+compileKotlin.kotlinOptions {
+    jvmTarget = "1.8"
+}
+val compileTestKotlin: KotlinCompile by tasks
+compileTestKotlin.kotlinOptions {
+    jvmTarget = "1.8"
 }

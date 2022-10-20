@@ -9,11 +9,7 @@ import java.util.*
 @SpringBootApplication
 @EnableMongoRepositories
 @EnableCaching
-class SandboxApplication {
-    companion object {
-        val NETWORK_OWNER: UUID = UUID.fromString("00000000-0000-0000-0000-000000000000")
-    }
-}
+class SandboxApplication
 
 fun main(args: Array<String>) {
     runApplication<SandboxApplication>(*args)
